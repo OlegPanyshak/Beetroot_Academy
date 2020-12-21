@@ -1,0 +1,35 @@
+*{
+    font-size:18px ;
+}
+.weight-bold{
+    font-weight: bold;
+}
+.style-italic{
+    font-style: italic;
+}
+h1{
+    color:white;
+    background-color:rgb(165,42,42);
+    text-align: center;
+    font-size: 32px;
+}
+.center-pic{
+    text-align: center;
+}
+.center-pic .main{
+    display: block;
+    width: 100%;
+}
+.car{
+    border: 2px dashed rgb(0,0,0);  
+}
+a{
+    text-decoration: none;
+    color: rgb(0,0,255);
+}
+footer{
+    color:white;
+    font-size: 20px;
+    background-color: rgb(0,0,0);
+    text-align: center;
+}
