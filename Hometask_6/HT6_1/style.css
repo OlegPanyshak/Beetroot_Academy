@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size:  0;
+}
+:root{
+    --sea-blue: #27b4b6;
+    --gray: #898f99;
+}
+.header{
+    text-align: center;
+    font-size:20px;
+    margin: 143px 0 108px;
+}
+.header_intro{
+    font-size: 9px;
+    color: var(--gray);
+    padding-bottom: 36px;
+}
+.header_headline{
+    color: var(--sea-blue);
+    font-size: 34px;
+    padding-bottom: 28px;
+}
+.headline_text{
+    width: 50%;
+    margin-left: 25%;
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 30px;
+}
+.panel_box{
+    display: block;
+    width: 100%;
+    margin:107 ;
+    
+}
+.panel{
+    text-align: center;
+    display: inline-block;
+    width: 25%;
+    padding:56px 30px 84px;
+}
+
+.panel_headline{
+    display: block;
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+    padding-bottom: 22px;
+}
+.header_intro,
+.header_headline,
+.headline_text,
+.panel_headline{
+    text-transform: uppercase;
+}
+.panel_text{
+    font-size: 10px;
+    line-height: 22px;
+    color:var(--gray);
+}
+.far,
+.fas{
+    font-size: 64px;
+    padding-bottom: 43px;
+}
+.panel:hover{
+    background-color: var(--sea-blue);
+    color: #ffffff;
+}
+.panel:hover .panel_text{
+    color: #ffffff
+}
+/* Заміна кольорів іконок падінги і марджини + розміри шрифту */
