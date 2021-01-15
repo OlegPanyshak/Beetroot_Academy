@@ -12,6 +12,7 @@
     --red:#eb7e7f;
 }
 body{
+    font-family:'Trebuchet MS', Trebuchet, Arial, sans-serif;
     width:1240px;
     height: 808px;
     border: solid 24px;
@@ -23,33 +24,47 @@ body{
 .headline_text{
     color: var(--red);
 }
+.headline_main{
+    font-size: 26px;
+    padding-top: 29px;
+}
+.headline_else{
+    font-size: 17px;
+    padding-bottom: 27px;
+}
 body>div{
     background-color: var(--grey);
 }
 ul{
-    padding: 40px 220px 40px;
+    padding: 40px 194px 40px;
 }
 li{
     display: block;
     width: 800px;
-    height:63px;
+    height:23px;
     text-align: left;
     color:white ;
     list-style: none;
     margin-left: 0;
+    padding: 20px;
 }
 .list :nth-child(odd) li{
     background-color: var(--light-purple);
-
 }
 .list :nth-child(even) li{
     background-color: var(--purple);
 }
 #footer{
+    display: block;
+    width: 800px;
+    height:22px;
     color: var(--red);
+    font-size: 19px;
+    margin: 0 194px;
+    padding: 26px;
 }
 .hower .content:hover{
-    border: solid;
+    border: 5px solid ;
     border-right: 0;
     border-left: 0;
     background-color: var(--dark-purple);
@@ -61,8 +76,7 @@ li{
     content: ")";
 }
 .list .hower:focus{
-    background-color: var(--red);
-    
+    background-color: var(--red);   
 }
 .content :nth-child(2){
     font-size: 20px;
@@ -70,4 +84,17 @@ li{
 .post_script{
     font-size: 11px;
 }
-
+.list .hower :active{
+    background-color: var(--red);
+}
+.content :checked ~ span{
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+input[type="checkbox"]{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin:-3px 4px 0 0;
+    vertical-align: middle;
+}
