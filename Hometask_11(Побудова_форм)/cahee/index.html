@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Cahee</title>
+</head>
+
+<body>
+    <main class="content">
+        <h2 class="content__title">Contact</h2>
+        <div class="content__slogo">for new projects, ideas, business or anything you'd like to discuss, contact with
+            me!
+        </div>
+        <div class="content__form-wrapper">
+            <form class="content__form form" action="#" method="POST">
+                <label class="content__label" for="name">Your name</label>
+                <input class="content__input" type="text" id="name" name="name" required placeholder="Your name...">
+                <label class="content__label" for="email">Your email</label>
+                <input class="content__input" type="email" id="email" name="email" required placeholder="Your email...">
+                <label class="content__label" for="tel">Your phone number</label>
+                <input class="content__input" type="tel" id="tel" name="phone_number"
+                    pattern="+38([0-9]{3})[0-9]{3}-[0-9]{4}" required placeholder="Your phone number...">
+                <textarea class="content__message" name="message" rows="10" cols="30"
+                    placeholder="Your message..."></textarea>
+                <button class="content__button" type="submit">Submit</button>
+            </form>
+            <div class="content__our-contact-det">
+                <h3 class="our-contact-det__title">Address</h3>
+                <span class="our-contact-det__text">123 City name, Street, City, Country</span>
+                <h3 class="our-contact-det__title">Email</h3>
+                <span class="our-contact-det__text">cahee@domain.com</span>
+                <h3 class="our-contact-det__title">Phone</h3>
+                <span class="our-contact-det__text">+012 345-6789</span>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__rights">
+            © 2015 Company. All right reserved.
+        </div>
+        <img class="footer__logo" src="./images/logo-small.png" alt="logo">
+        <div class="footer__made-by">
+            Made with <span class="footer__pink-text">love</span> by Auskteez
+        </div>
+    </footer>
+</body>
+
+</html>

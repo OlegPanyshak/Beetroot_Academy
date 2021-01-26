@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Sign In</title>
+</head>
+
+<body class="body">
+    <div class="form body__form">
+        <div class="form__background"></div>
+        <div class="form__shadow">
+            <img src="./images/form_shadow.svg" alt="shadow">
+        </div>
+        <ul class="form__tabs tabs">
+            <li class="tabs__link-container">
+                <a href="#" class="tabs__link tabs__link--active">Sign in</a>
+            </li>
+            <li class="tabs__link-container">
+                <a href=" #" class="tabs__link">Join us</a>
+            </li>
+        </ul>
+        <form class="form__sign-in sign-in" action="#" method="POST">
+            <div class="sign-in__inputs inputs">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required minlength="4" autocomplete="on"
+                    pattern="^[A-Za-z]{2}[A-Za-z]+$" placeholder="type here...">
+                <span class="inputs__error">Error</span>
+            </div>
+            <div class="sign-in__inputs inputs">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required pattern="^[A-Za-z0-9]{7,12}$"
+                    placeholder="type here...">
+                <span class="inputs__error">Error</span>
+            </div>
+            <div class="sign-in__checkbox-container">
+                <input type="checkbox" id="checkbox" name="checkbox" checked>
+                <label for="checkbox">Keep me signed in</label>
+            </div>
+            <div class="submit-container">
+                <!-- в реальному проекті <input type="hidden" name="csrf_tokken" value=""> -->
+                <button class="submit__button" type="submit">Sign in</button>
+            </div>
+        </form>
+        <ul class="form__footer">
+            <li>
+                <a href="#">Forgot password</a>
+            </li>
+            <li>
+                <a href="#">Create account</a>
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
