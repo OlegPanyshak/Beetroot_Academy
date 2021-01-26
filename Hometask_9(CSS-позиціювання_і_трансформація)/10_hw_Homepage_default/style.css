@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato',sans-serif;
+}
+.page_form{
+    display: flex;
+    flex-direction: column;
+}
+.page_form_headline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.form_headline{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 8.95px;
+    margin: 108px 0 64px;
+    text-transform: uppercase;
+}
+.form_headline::after{
+    content: "";
+    display: block;
+    align-self: center;
+    width: 45px;
+    border-bottom: 4px solid #dddbdb;
+    margin: 0 auto;    
+}
+.form_info{
+    width: 100%;  
+    color: #3c3c3c;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    align-content:center;
+}
+.form_info p{
+    width: 561px;
+    height: 39px;
+    margin: 0 auto;
+}
+.page_content{
+    display: flex;
+    margin: 59px 0 116px;
+    justify-content: center;
+}
+.content_box-1{
+    position: relative;
+}
+.no_photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 269px;
+    height: 268px;
+    background-color: #ffffff;
+    font-size: 20px;
+    color: rgba(0,0,0, 0.5);
+}
+.content_box-2{
+    position: relative;
+    margin-left: 31px;
+}
+.content_box-3{
+    position: relative;
+    margin-left: 31px;
+}
+.content_box-4{
+    position: relative;
+    margin-left: 31px;
+}
+.content_mask{
+    position: absolute;
+    display: none;
+    top:0px;
+    left:0px;
+    width: 269px;
+    height: 268px;
+    background-color: rgba(0, 174, 217, 0.9);
+    align-items: center;
+    justify-content: center;
+
+}
+.icon_box{
+    display: flex;
+    width:42px;
+    height: 42px;
+    background-color: rgba(255,255,255, 0.3);
+    margin-left: 4px;
+    justify-content: center;
+    align-items: center;
+}
+.icon_box a{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+.fab{
+    font-size: 24px;
+    margin: auto auto;
+}
+.content_box h3{
+    font-weight: 700;
+    font-size: 18px;
+    color: #282528;
+}
+.content_box h4{
+    font-weight: 300;
+    font-size: 14px;
+    color: #646464;
+}
+.content_box:hover .content_mask{
+    display: flex;
+}
+.content_box:hover .no_photo{
+    opacity: 0;
+}

@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-images {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.image {
+    height: 310px;
+    width: 370px;
+    position: relative;
+    
+}
+
+.image-block:not(:last-child) {
+    margin-right: 10px;
+}
+
+.image img {
+    position: absolute;
+    width: 100%;
+    object-fit: none;
+    z-index: -1;
+}
+
+.image h2 {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.image h3 {
+    position: absolute;
+    left: 20px;
+    bottom: 16px;
+    color: rgba(255,255,255,.7);
+}
+
+.image h4 {
+    position: absolute;
+    top: 20px;
+    background-color: rgba(65, 63, 63, 0.3);
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    text-align: center;
+    z-index: -1;
+}
+
+.image-block {
+    position: relative;
+    background:linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(0,0,0,0.8));
+    margin-bottom: 10px;
+}
+
+
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    object-fit: none;
+}
+
+.image-block:hover .mask {
+    display: block;
+    z-index: -1;
+}
+
+.mask img {
+    width: 100%;
+    object-fit: none;
+    z-index: -1;
+}
+
+.mask h4 {
+    position: absolute;
+    top: 20px;
+    background-color: rgba(65, 63, 63, 0.3);
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 90px;
+    margin-bottom: 30px;
+}
+
+body {
+    background-color: #b07cf7;
+}
+
+.info {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: white;
+    width: 563px;
+    text-align: center;
+    margin-bottom:47px ;
+}
+
+.view-more {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+    background-color: #f72b3b;
+    width: 10%;
+    height: 60px;
+    text-transform: uppercase;
+}
+.view-more a{
+    text-decoration: none;
+    color: white;
+}
