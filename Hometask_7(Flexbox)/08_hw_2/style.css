@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hans Kendrick - Heavy', 'arial Narrow bold' sans-serif ;
+}
+.body{
+    display: block;
+    background-color: #e2e7ec;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 90px 240px;
+    text-transform: uppercase;
+   
+}
+.content_box_1{
+    display: flex;
+    width: 100%;
+}
+.content_box_2{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+.box_panel{
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    background-color: #ffffff;
+}
+.box_panel_1{
+    display: flex;
+    width:740px;
+    position: relative;
+    background:linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(0,0,0,0.7));
+}
+.box_panel_1>img{
+    z-index: -1;
+}
+.panel_headline_1>.panel_date{
+    padding-left: 3px;
+}
+.box_panel_3{
+    display: flex;
+    width: 360px;
+    
+}
+.box_panel_2,
+.box_panel_4,
+.box_panel_5{
+    display: flex;
+    width: 360px;
+    margin-left: 20px;
+}
+.panel_headline_1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: #ffffff;
+    bottom: 40px;
+    padding: 23px 263px 0 43px;
+}
+.headline_1{
+    line-height: 36px;
+    font-size: 30px;
+}
+.panel_headline{
+    height: 289px;
+}
+.panel_date{
+    font-size: 13px;
+    font-weight: 500;
+    color: #818181;
+    letter-spacing: 0.33px;
+    padding-left:1px;
+    display: block;
+    margin-bottom: 21px;
+    
+}
+.panel_headline_2,
+.panel_headline_3,
+.panel_headline_5{
+    padding: 25px 20px 25px 27px;
+}
+.panel_headline_4{
+    padding: 62px 20px 25px 27px ;
+}
+.headline_2,
+.headline_3,
+.headline_4,
+.headline_5{
+    display: flex;
+    font-size:22px;
+    height: 78px;
+    letter-spacing: 0.55px;
+    margin-bottom: 70px;
+}
+.loading_bar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.loading_bar span{
+    display: block;
+    padding: 8px 0 9px 13px;
+    font-size: 13px;
+    color:#818181 ;
+    text-transform: uppercase;
+}
